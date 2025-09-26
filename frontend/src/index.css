@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbars for Chatbot */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Colorblind simulation filters */
+.filter-protanopia {
+  filter: url('#protanopia');
+}
+.filter-deuteranopia {
+  filter: url('#deuteranopia');
+}
+.filter-tritanopia {
+  filter: url('#tritanopia');
+}
+
+/* Font size accessibility classes */
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+}
+.text-md {
+  font-size: 1rem; /* 16px */
+}
+.text-lg {
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Optional: smooth color transitions for dark/light mode */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Optional: gradient background for dashboard or main sections */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #6366F1, #EC4899, #FBBF24);
+}
